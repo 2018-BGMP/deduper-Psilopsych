@@ -1,0 +1,29 @@
+Soft Clipping - Only occurs at the ends of reads. Doesn't count as Mis/match. Could clip at either ends of 
+
+Trim from 3' end
+
+Look for I & D in CIGAR string 
+
+PCR duplicates have the same UMI
+without UMI, for it to be a PCR duplicate, you must have same starting position. 
+
+Chr1: 0 100M
+Chr1: 5 5S95M
+
+Must subtract soft-clipping value from chromosome starting position
+
+Bitwise Flag
+Look at strand specific - SEQ is being reverse complemented
+
+Strand specific libraries
+
+Randomers may be different, sequence super long randomers. 
+
+Always adjust 5' start-site position 
+
+We only care about soft Clipping on start sit
+
+If bitwise flag is flagged, must adjust for start position
+If not, you can use POS
+
+Sea Lamprey genome 
